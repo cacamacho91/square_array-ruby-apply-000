@@ -1,3 +1,7 @@
 def square_array(array)
-  array.collect {|x| x =* x}
+  newarray = []
+  array.each do |item|
+    newarray << item*item
+  end
+  return newarray
 end
